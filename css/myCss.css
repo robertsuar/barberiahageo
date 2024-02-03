@@ -1,0 +1,272 @@
+/*---ESTO ES LA BARBER POLE---*/
+
+
+  
+.barberPole {
+  z-index: 100;
+  margin-left: -15%;
+  height: 200px;
+  width: 88px;
+  border-left: 1px solid rgb(200,200,200);
+  border-right: 1px solid rgb(200,200,200);
+  position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.container1 {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 100%;
+  width: 91%;
+  overflow: hidden;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.case {
+  height: 100%;
+  width: 100%;
+  animation: scroll 6s infinite;
+  animation-timing-function: linear;
+  -webkit-animation: scroll 6s infinite;
+  -webkit-animation-timing-function: linear;
+  position: absolute;
+    top: -25%;
+    left: -50%;
+}
+
+.colors {
+  height: 300%;
+  width: 500%;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.colors div {
+  height: 100%;
+  width: 10%;
+  display: inline-flex;
+}
+
+.red {
+  background-color: red;
+}
+.white {
+  background-color: white;
+}
+.blue {
+  background-color: blue;
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.3) 50%, rgba(255,255,255,1), rgba(255,255,255,0.7));
+  position: absolute;
+}
+
+.cap {
+  height: 20%;
+  width: 116%;
+  position: absolute;
+    left: -8%;
+  background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.3) 25%, rgba(0,0,0,1), rgba(0,0,0,0.7));
+}
+
+#top {
+  border-radius: 50% 50% 0 0;
+    top: -20%;
+}
+
+#bottom {
+  border-radius: 0 0 50% 50%;
+    bottom: -20%;  
+}
+
+@keyframes scroll {
+    0%    {position: absolute;
+            top: -50%;
+            left: -75%;}
+    100%  {position: absolute;
+            top: -164%;
+            left: -75%;}
+}
+/*HASTA AQUÍ EL BARBER POOLE*/
+
+
+
+
+
+
+
+/*BARBER OWNER
+
+
+  .card:hover .card-body {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    width: 80%;
+    height: 80%;
+  }
+  
+  .card:hover .card-body ul li a {
+    font-size: 0;
+  }
+  
+  .card:hover .card-body ul li a i {
+    font-size: 3em;
+    color: black;
+    
+    margin-right: 50%;
+    width: 50px;
+  max-width: 100px;    
+  }
+
+  .card-body ul.list-inline {
+    text-align: center;
+    padding-top: 30%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body ul.list-inline li {
+  width: 25%;
+  height: 25%;
+}
+
+.card-body ul.list-inline li svg {
+  width: 25px;
+  height: 25px;
+}*/
+
+.card {
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 75%;
+  height: 75%;
+  background-color: white;
+  opacity: 0.8;
+  display: none;
+  
+}
+
+.card:hover .card-overlay {
+  display: block;
+}
+
+.card-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around; /* Distribute icons evenly */
+}
+
+.card-overlay li {
+  float: none; /* Remove float */
+  margin-right: 0;
+  margin: 0 20px; /* Add spacing between icons */
+}
+
+.card-overlay li a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  
+  color: blue;
+  text-align: center;
+  
+}
+.card-overlay ul.list-inline {
+text-align: center;
+    padding-top: 30%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*--- COOKIE CONSENT-----*/
+
+
+.cookie-consent{
+  position: fixed;
+bottom: 38px;
+left: 60px;
+width: 260px;
+padding-top: 7px;
+height: 83px;
+color: #fff;
+
+line-height: 20px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 14px;
+background: #292929;
+z-index: 1020;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.allow-button{
+      height: 20px;
+    width: 104px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 3px;
+    border: 1px solid green;
+    background-color: green;
+}
+
+
+/*-----ADVICE, PRIVACITY, COOKIES----*/
+
+.princeps{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.princeps p{
+  text-align: justify;
+  font-size: 4em;
+}
+
+.princeps h1,h3{
+  text-align: center;  
+}
+
+.advice{
+padding: 5%;
+margin:1%;
+}
+
+.quecookies{
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.cookies{
+  padding: 5%;
+  margin:1%;
+}
+
+.cookies h2{
+  text-align: center;
+}
